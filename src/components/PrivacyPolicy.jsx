@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
   const content = {
     sl: {
       title: 'Politika zasebnosti',
-      lastUpdated: 'Nazadnje posodobljeno: 10. Avgust 2025',
+      lastUpdated: 'Nazadnje posodobljeno: 24. Avgust 2025',
       backToHome: 'Back to Home',
       sections: [
         {
@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
         {
           title: '2. Namen aplikacije',
           content: [
-            '"DriveTrack Pro" omogoča uporabnikom sledenje porabi goriva oziroma električne energije za njihova vozila ter pregled bencinskih servisov v Sloveniji.'
+            '"DriveTrack Pro" omogoča uporabnikom sledenje porabi goriva oziroma električne energije za njihova vozila.'
           ]
         },
         {
@@ -85,7 +85,7 @@ const PrivacyPolicy = () => {
     },
     en: {
       title: 'Privacy Policy',
-      lastUpdated: 'Last updated: August 10, 2025',
+      lastUpdated: 'Last updated: August 24, 2025',
       backToHome: 'Back to Home',
       sections: [
         {
@@ -98,7 +98,7 @@ const PrivacyPolicy = () => {
         {
           title: '2. Application Purpose',
           content: [
-            '"DriveTrack Pro" enables users to track fuel or electricity consumption for their vehicles and view fuel stations in Slovenia.'
+            '"DriveTrack Pro" enables users to track fuel or electricity consumption for their vehicles.'
           ]
         },
         {
