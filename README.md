@@ -1,40 +1,40 @@
-# Na Poti - Landing Page
+# Daily Bible Reader - Landing Page
 
-A modern, responsive landing page for the "Na Poti" mobile app built with React and Vite.
+A modern, responsive landing page for the **Daily Bible Reader** mobile app built with React and Vite.
 
 ## Overview
 
-This is a single-page website designed to introduce the Na Poti mobile app, provide download links to the App Store, and host the required Privacy Policy page for app submission.
+This is a single-page website designed to introduce the Daily Bible Reader app, provide a download link to the App Store, and host the Privacy Policy page required for app submission.
 
 ## Features
 
-- **Modern Design**: Dark-themed with cyan/blue and purple accents matching the app's aesthetic
-- **Responsive Layout**: Optimized for desktop, tablet, and mobile devices
-- **Two-Page Structure**: 
+- **Modern Design**: Dark theme with gold and green accents and creamy beige text, matching the app’s logo and brand
+- **Responsive Layout**: Optimized for desktop, tablet, and mobile
+- **Two-Page Structure**:
   - Main landing page (`/`)
   - Privacy Policy page (`/privacy`)
 - **React Router**: Client-side routing for smooth navigation
-- **CSS Animations**: Subtle animations and hover effects for enhanced user experience
+- **CSS Animations**: Subtle animations and hover effects
 
 ## Tech Stack
 
-- **React 19.1.1** - Frontend framework
-- **React Router DOM** - Client-side routing
-- **Vite 7.1.2** - Build tool and development server
-- **CSS3** - Styling with modern features (gradients, flexbox, grid)
+- **React 19.1.1** – Frontend framework
+- **React Router DOM** – Client-side routing
+- **Vite 7.1.2** – Build tool and development server
+- **CSS3** – Styling (gradients, flexbox, grid)
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js (version 20.19.0 or higher recommended)
+- Node.js (version 20.x or higher recommended)
 - npm
 
 ### Installation
 
 1. Clone the repository or navigate to the project directory:
    ```bash
-   cd NaPoti_landing_page
+   cd Daily_Bible_Reader_landing_page
    ```
 
 2. Install dependencies:
@@ -47,7 +47,7 @@ This is a single-page website designed to introduce the Na Poti mobile app, prov
    npm run dev
    ```
 
-4. Open your browser and visit `http://localhost:5173`
+4. Open your browser at `http://localhost:5173`
 
 ### Build for Production
 
@@ -55,49 +55,48 @@ This is a single-page website designed to introduce the Na Poti mobile app, prov
 npm run build
 ```
 
-The built files will be in the `dist` directory.
+Output is in the `dist` directory.
+
+### Deploy (GitHub Pages)
+
+```bash
+npm run deploy
+```
+
+Ensure `CNAME` and `homepage` in `package.json` match your custom domain (e.g. `daily-bible-reader.enej.app`).
 
 ## Project Structure
 
 ```
 src/
+├── assets/
+│   └── app-logo.png          # App icon/logo
 ├── components/
-│   ├── LandingPage.jsx       # Main landing page component
+│   ├── LandingPage.jsx       # Main landing page
 │   ├── LandingPage.css       # Landing page styles
-│   ├── PrivacyPolicy.jsx     # Privacy policy page component
+│   ├── PrivacyPolicy.jsx     # Privacy policy page
 │   └── PrivacyPolicy.css     # Privacy policy styles
-├── App.jsx                   # Main app component with routing
+├── App.jsx                   # App root and routing
 ├── App.css                   # Global reset and base styles
 ├── index.css                 # Root styles
-└── main.jsx                  # App entry point
+└── main.jsx                  # Entry point
+public/
+└── favicon.png               # Browser tab icon
 ```
 
 ## Customization
 
-### Adding Your Logo and Background
-
-To add your app's logo and background image:
-
-1. Replace the SVG placeholder in `LandingPage.jsx` with your actual logo
-2. Update the background gradient in `LandingPage.css` to use your background image
-3. Adjust colors in the CSS files to match your brand
-
-### Updating Privacy Policy
-
-The Privacy Policy includes placeholder text like `[Your Contact Email]` and `[Date]`. Update these with your actual information before deploying.
-
-### App Store Link
-
-Update the App Store button href in `LandingPage.jsx` with your actual App Store URL once your app is published.
+- **Logo**: Replace `src/assets/app-logo.png` and `public/favicon.png` with your icon.
+- **Privacy Policy**: Edit the sections in `src/components/PrivacyPolicy.jsx`.
+- **App Store link**: Update the App Store button `href` in `LandingPage.jsx` when the app is published.
 
 ## App Information
 
-**Na Poti** - "Vaša vozila, na dlani!" (Your vehicles, in the palm of your hand!)
+**Daily Bible Reader** – Your daily companion for Scripture.
 
-A comprehensive vehicle expense tracking app that supports:
-- Fuel filling and charging session tracking
-- Support for all vehicle types (petrol, diesel, hybrid, electric)
-- Fuel station overview in Slovenia
+- Daily reading with progress and streaks
+- Bookmark favourite chapters and passages
+- Multiple Bible versions, with data stored locally on device
 
 ## Developer
 

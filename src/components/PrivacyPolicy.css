@@ -1,9 +1,9 @@
-/* Privacy Policy Styles */
+/* Privacy Policy Styles - Daily Bible Reader */
 .privacy-policy {
   min-height: 100vh;
-  background: #000;
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(160deg, #1a1814 0%, #252219 40%, #1e2a1a 100%);
+  color: #f5f0e6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Georgia', serif;
   line-height: 1.6;
 }
 
@@ -16,73 +16,35 @@
 /* Header */
 .header {
   padding: 2rem 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.25);
   margin-bottom: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .back-link {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: #00ffff;
+  color: #c9a227;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .back-link:hover {
-  color: #8a2be2;
-}
-
-/* Language Toggle */
-.language-toggle {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.flag-button {
-  background: none;
-  border: 2px solid #333;
-  border-radius: 8px;
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  min-width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flag-button:hover {
-  border-color: #00ffff;
-  transform: scale(1.05);
-}
-
-.flag-button.active {
-  border-color: #00ffff;
-  background: rgba(0, 255, 255, 0.1);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  color: #2d5a27;
 }
 
 /* Title */
-h1 {
+.privacy-policy h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #00ffff, #8a2be2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #c9a227;
   text-align: center;
 }
 
 .last-updated {
   text-align: center;
-  color: #999;
+  color: rgba(245, 240, 230, 0.6);
   margin-bottom: 3rem;
   font-style: italic;
 }
@@ -92,41 +54,25 @@ h1 {
   max-width: 100%;
 }
 
-section {
+.privacy-policy section {
   margin-bottom: 3rem;
 }
 
-h2 {
+.privacy-policy h2 {
   font-size: 1.8rem;
-  color: #00ffff;
+  color: #c9a227;
   margin-bottom: 1rem;
-  border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+  border-bottom: 2px solid rgba(201, 162, 39, 0.3);
   padding-bottom: 0.5rem;
 }
 
-h3 {
-  font-size: 1.3rem;
-  color: #8a2be2;
-  margin: 1.5rem 0 0.8rem 0;
-}
-
-p {
+.privacy-policy p {
   margin-bottom: 1rem;
-  color: #e0e0e0;
+  color: rgba(245, 240, 230, 0.9);
 }
 
-ul {
-  margin: 1rem 0;
-  padding-left: 1.5rem;
-}
-
-li {
-  margin-bottom: 0.5rem;
-  color: #e0e0e0;
-}
-
-li strong {
-  color: #00ffff;
+.privacy-policy p strong {
+  color: #c9a227;
 }
 
 /* Responsive Design */
@@ -134,19 +80,15 @@ li strong {
   .container {
     padding: 1rem;
   }
-  
-  h1 {
+
+  .privacy-policy h1 {
     font-size: 2rem;
   }
-  
-  h2 {
+
+  .privacy-policy h2 {
     font-size: 1.5rem;
   }
-  
-  h3 {
-    font-size: 1.2rem;
-  }
-  
+
   .header {
     padding: 1rem 0;
   }

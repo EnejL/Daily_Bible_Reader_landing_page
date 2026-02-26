@@ -1,9 +1,9 @@
-/* Landing Page Styles */
+/* Landing Page Styles - Daily Bible Reader */
 .landing-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(160deg, #1a1814 0%, #252219 40%, #1e2a1a 100%);
+  color: #f5f0e6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Georgia', serif;
 }
 
 /* Hero Section */
@@ -23,7 +23,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
+  background: linear-gradient(160deg, #1a1814 0%, #252219 40%, #1e2a1a 100%);
   z-index: -1;
 }
 
@@ -34,49 +34,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
-    radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(0, 191, 255, 0.05) 0%, transparent 50%);
+  background-image:
+    radial-gradient(circle at 25% 75%, rgba(201, 162, 39, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 75% 25%, rgba(45, 90, 39, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(245, 240, 230, 0.03) 0%, transparent 60%);
   animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
-}
-
-/* Language Toggle */
-.language-toggle {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  display: flex;
-  gap: 0.5rem;
-  z-index: 10;
-}
-
-.flag-button {
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(0, 255, 255, 0.3);
-  border-radius: 8px;
-  padding: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 1.2rem;
-  backdrop-filter: blur(10px);
-}
-
-.flag-button:hover {
-  background: rgba(0, 255, 255, 0.2);
-  border-color: rgba(0, 255, 255, 0.6);
-  transform: translateY(-2px);
-}
-
-.flag-button.active {
-  background: rgba(0, 255, 255, 0.3);
-  border-color: #00ffff;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
 }
 
 /* Scroll Indicator */
@@ -86,13 +53,14 @@
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(245, 240, 230, 0.7);
   z-index: 2;
   animation: fadeInUp 1s ease-out 1s both;
 }
 
 .scroll-arrow {
   margin-bottom: 0.5rem;
+  color: #c9a227;
   animation: bounce 2s infinite;
 }
 
@@ -138,39 +106,43 @@
 }
 
 .app-logo {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   margin: 0 auto;
-  background: linear-gradient(45deg, #00ffff, #8a2be2);
-  border-radius: 24px;
+  background: #f5f0e6;
+  border-radius: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.3);
+  padding: 12px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(201, 162, 39, 0.15);
   animation: glow 2s ease-in-out infinite alternate;
 }
 
+.app-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 @keyframes glow {
-  from { box-shadow: 0 20px 40px rgba(0, 255, 255, 0.3); }
-  to { box-shadow: 0 25px 50px rgba(0, 255, 255, 0.5); }
+  from { box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(201, 162, 39, 0.15); }
+  to { box-shadow: 0 24px 56px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(201, 162, 39, 0.25); }
 }
 
 .app-name {
   font-size: 4rem;
   font-weight: 700;
   margin: 1rem 0;
-  background: linear-gradient(45deg, #00ffff, #8a2be2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+  color: #f5f0e6;
+  text-shadow: 0 2px 20px rgba(201, 162, 39, 0.3);
+  letter-spacing: -0.02em;
 }
 
 .tagline {
   font-size: 1.5rem;
   margin-bottom: 3rem;
-  color: #b0b0b0;
+  color: rgba(245, 240, 230, 0.85);
   font-weight: 300;
 }
 
@@ -185,36 +157,41 @@
 }
 
 .app-store-badge {
-  background: linear-gradient(45deg, #000, #333);
-  border: 2px solid #00ffff;
+  background: linear-gradient(145deg, #2d2a24, #1a1814);
+  border: 2px solid rgba(201, 162, 39, 0.5);
   border-radius: 12px;
   padding: 12px 24px;
   display: flex;
   align-items: center;
   gap: 12px;
-  color: white;
+  color: #f5f0e6;
   transition: all 0.3s ease;
 }
 
 .app-store-badge:hover {
-  border-color: #8a2be2;
-  box-shadow: 0 10px 25px rgba(138, 43, 226, 0.3);
+  border-color: #c9a227;
+  box-shadow: 0 10px 30px rgba(201, 162, 39, 0.2);
+}
+
+.app-store-badge svg {
+  color: #c9a227;
 }
 
 .download-text {
   font-size: 0.9rem;
-  color: #b0b0b0;
+  color: rgba(245, 240, 230, 0.8);
 }
 
 .store-text {
   font-size: 1.2rem;
   font-weight: 600;
+  color: #f5f0e6;
 }
 
 /* Features Section */
 .features {
   padding: 6rem 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .container {
@@ -227,10 +204,8 @@
   text-align: center;
   font-size: 3rem;
   margin-bottom: 4rem;
-  background: linear-gradient(45deg, #00ffff, #8a2be2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #c9a227;
+  font-weight: 600;
 }
 
 .features-grid {
@@ -241,8 +216,8 @@
 }
 
 .feature-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  background: rgba(245, 240, 230, 0.05);
+  border: 1px solid rgba(201, 162, 39, 0.2);
   border-radius: 16px;
   padding: 2.5rem;
   text-align: center;
@@ -252,38 +227,38 @@
 
 .feature-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(138, 43, 226, 0.5);
-  box-shadow: 0 20px 40px rgba(138, 43, 226, 0.2);
+  border-color: rgba(45, 90, 39, 0.5);
+  box-shadow: 0 20px 40px rgba(45, 90, 39, 0.15);
 }
 
 .feature-icon {
   width: 80px;
   height: 80px;
   margin: 0 auto 1.5rem;
-  background: linear-gradient(45deg, #00ffff, #8a2be2);
+  background: linear-gradient(145deg, rgba(201, 162, 39, 0.25), rgba(45, 90, 39, 0.3));
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #c9a227;
 }
 
 .feature-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #00ffff;
+  color: #c9a227;
 }
 
 .feature-card p {
-  color: #b0b0b0;
+  color: rgba(245, 240, 230, 0.85);
   line-height: 1.6;
 }
 
 /* Footer */
 .footer {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   padding: 3rem 0;
-  border-top: 1px solid rgba(0, 255, 255, 0.2);
+  border-top: 1px solid rgba(201, 162, 39, 0.2);
 }
 
 .footer-content {
@@ -295,18 +270,18 @@
 }
 
 .copyright {
-  color: #b0b0b0;
+  color: rgba(245, 240, 230, 0.7);
   margin: 0;
 }
 
 .privacy-link {
-  color: #00ffff;
+  color: #c9a227;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .privacy-link:hover {
-  color: #8a2be2;
+  color: #2d5a27;
 }
 
 /* Responsive Design */
@@ -314,30 +289,35 @@
   .app-name {
     font-size: 2.5rem;
   }
-  
+
   .tagline {
     font-size: 1.2rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .feature-card {
     padding: 2rem;
   }
-  
+
   .footer-content {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .hero-content {
     padding: 1rem;
+  }
+
+  .app-logo {
+    width: 120px;
+    height: 120px;
   }
 }
